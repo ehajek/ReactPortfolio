@@ -5,6 +5,11 @@ import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab)
 
 function App() {
   const [categories] = useState([
@@ -45,6 +50,7 @@ function App() {
           <ContactForm></ContactForm>
         )}
       </main>
+      <Footer></Footer>
     </div>
   );
 }

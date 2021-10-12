@@ -14,12 +14,16 @@ library.add(fab)
 function App() {
   const [categories] = useState([
     {
-      name: "About",
+      name: "About Me",
       description: <About></About>
     },
     {
       name: 'Portfolio',
       description: <Portfolio></Portfolio>
+    },
+    { 
+      name: "Contact", 
+      description: <ContactForm></ContactForm>
     },
     { 
       name: "Resume", 
@@ -41,14 +45,10 @@ function App() {
         setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        {!contactSelected ? (
-          <>
-          <Gallery currentCategory={currentCategory}></Gallery>
-            {/* <About></About> */}
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
+      <Gallery currentCategory={currentCategory}></Gallery>
+
+
+
       </main>
       <Footer></Footer>
     </div>

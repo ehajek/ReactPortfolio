@@ -17,7 +17,7 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: rgb(252,1,2);
+  --primary: #D8315B;
   --secondary: #FFFAFF;
   --tertiary: #D8315B;
   --light: #3E92CC;
@@ -180,6 +180,9 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+
 
 .flex-row {
   display: flex;
@@ -353,3 +356,4 @@ a {
   width: 100%;
   padding: 15px;
 }
+

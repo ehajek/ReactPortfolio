@@ -38,24 +38,36 @@ function ContactForm() {
     <section>
       <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name: &nbsp;</label>
+        <ul>
+        <li>
+          <label htmlFor="name">Name:</label>
+         </li>
+         <li>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="email">Email address: &nbsp;</label>
+          </li>
+       <li>
+          <label htmlFor="email">Email address:</label>
+          </li>
+          <li>
           <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
+          </li>
+       
+       <li>
           <label htmlFor="message">Message:</label>
+          </li>
+          <li>
           <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
+          </li>
+        
         {errorMessage && (
-          <div>
+          <li>
             <p className="error-text">{errorMessage}</p>
-          </div>
+          </li>
         )}
+        <li>
         <button data-testid="button" type="submit">Submit</button>
+        </li>
+        </ul>
       </form>
     </section>
   );

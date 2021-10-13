@@ -9,7 +9,7 @@ function Portfolio(props) {
 
   return (
     <section>
-      <h1 id="portfolio">Portfolio Test</h1>
+      <h1 id="portfolio">Portfolio</h1>
 
       <Photos></Photos>
     </section>

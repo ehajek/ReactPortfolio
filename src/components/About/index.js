@@ -5,7 +5,7 @@ function About() {
       <h1 id="about">About me</h1>
       <p></p>
       <img 
-      src="../../assets/images/me.jpeg"
+      src="./assets/images/me.jpeg"
       alt="Profile"
       className="roundImage"
       ></img>

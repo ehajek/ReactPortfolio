@@ -251,7 +251,7 @@ textarea {
   cursor: pointer;
 }
 
-/* .modalBackdrop {
+/* .photoBackdrop {
   background: rgba(0, 0, 0, 0.65);
   bottom: 0;
   left: 0;
@@ -262,16 +262,49 @@ textarea {
   z-index: 1;
 } */
 
-/* .modalContainer {
+.photoContainer {
   background: var(--darker);
   border-radius: 5px;
   max-width: 100%;
   margin: 50px auto;
-  padding: 15px;
-  width: 960px;
-} */
+  padding: 20px;
+  width: 740px;
+  text-align: center;
+  
+}
 
-/* .modalTitle {
+
+
+.img__wrap {
+  position: relative;
+
+}
+
+.img__description {
+  position: absolute;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 24px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 250, 255, 0.90);
+  color: var(--dark);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .6s, visibility .4s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .photoEdits:hover  {
+  filter: blur(5px);
+} */
+/* .photoTitle {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 25px;

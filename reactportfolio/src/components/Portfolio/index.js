@@ -1,9 +1,17 @@
 import React from 'react';
+import Photos from '../Photos';
+
+
+
+
+
 function Portfolio(props) {
-  // const { currentCategory } = props;
+
   return (
     <section>
       <h1 id="portfolio">Portfolio Test</h1>
+
+      <Photos></Photos>
     </section>
   );
 }

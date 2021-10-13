@@ -251,6 +251,12 @@ textarea {
   cursor: pointer;
 }
 
+.roundImage {
+  border-radius: 50%;
+  max-width: 15%;
+  height: auto;
+}
+
 /* .photoBackdrop {
   background: rgba(0, 0, 0, 0.65);
   bottom: 0;

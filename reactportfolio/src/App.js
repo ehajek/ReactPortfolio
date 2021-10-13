@@ -46,9 +46,6 @@ function App() {
       ></Nav>
       <main>
       <Gallery currentCategory={currentCategory}></Gallery>
-
-
-
       </main>
       <Footer></Footer>
     </div>

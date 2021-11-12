@@ -28,8 +28,8 @@ const Photos = () => {
         },
         {
             id: '6',
-            name: "Blue 42",
-            link: "https://github.com/DanM1996/blue-42"
+            name: "Stock Watch Live",
+            link: "http://www.stockwatch.life/"
         }
     ];
 
